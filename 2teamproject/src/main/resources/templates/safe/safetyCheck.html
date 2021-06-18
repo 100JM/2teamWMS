@@ -1,0 +1,78 @@
+<!doctype html>
+<html
+	xmlns:th="http://www.thymeleaf.org"
+ 	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="@{layout/default}">
+	
+	<th:block layout:fragment="pageTitle">
+		<div class="page-header">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item">Home</li>
+				<li class="breadcrumb-item active">safety check</li>
+			</ol>
+		
+			<ul class="app-actions">
+				<li>
+					<a href="#" id="reportrange">
+						<span class="range-text"></span>
+						<i class="icon-chevron-down"></i>	
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="icon-export"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</th:block>
+	<th:block layout:fragment="container">
+		<div class="main-container">
+			<div class="row gutters">
+				<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+					<div class="table-container">
+						<div class="t-header">안전점검 내역조회</div>
+						<div class="table-responsive">
+							<table id="copy-print-csv" class="table custom-table">
+								<thead>
+									<tr>
+									  <th>안전점검코드</th>
+									  <th>창고정보코드</th>
+									  <th>화재안전점검내용</th>
+									  <th>물류안전점검내용</th>
+									  <th>주유설비 및 장비 안전점검내용</th>
+									  <th>등록담당자</th>
+									  <th>등록일</th>
+									  <th>이상사유</th>
+									  <th>수정</th>
+									  <th>삭제</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+									  <td>Tiger Nixon</td>
+									  <td>System Architect</td>
+									  <td>Edinburgh</td>
+									  <td>61</td>
+									  <td>2011/04/25</td>
+									  <td>$320,800</td>
+									  <td>$320,800</td>
+									  <td>$320,800</td>
+									  <td>
+									  	<a href="#">수정</a>
+								  	  </td>
+									  <td>
+									  	<a href="#">삭제</a>
+								  	  </td>
+									</tr>
+								</tbody>
+				    	</table>
+						</div>
+					</div>
+				
+				</div>
+			</div>
+		</div>
+</th:block>
+		
+</html>
