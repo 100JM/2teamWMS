@@ -5,7 +5,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class releaseController {
+public class ReleaseController {
 	
 	@GetMapping("/releaseApproval")
 	public String releaseApproval(Model model) {
